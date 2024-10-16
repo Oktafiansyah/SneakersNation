@@ -1,0 +1,100 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: black;
+    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.navbar .navbar-judul a {
+    font-family: "permanent marker";
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.navbar .navbartoogle a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.Nama-Brand {
+    font-family: "permanent marker";
+    font-size: 3rem;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding-top: 65px;
+
+}
+.head {
+    background-image: url(Images/Shoes.png);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.body {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "ubuntu condensed";
+    padding: 1.5rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+
+.Quotation {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.2rem;
+    font-family: "kalam";
+}
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+.nyala {
+    font-family: "New Amsterdam",sans-serif;
+    background: #020016;
+    width: 300px;
+    height: 200px;
+}
+
+.nyala img {
+    width: 100px;
+}
+
+.nyala p {
+    color: #fdf1ff;
+    text-wrap: balance;
+}
+
+.nyala h1 {
+    font-size: 3rem;
+    background: linear-gradient(to right, #c2feff 15%, #e48184, #c2feff 85%);
+    background-clip: text;
+    color: transparent;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    to {background-position: 100rem;}
+}
+
