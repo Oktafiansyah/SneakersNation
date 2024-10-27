@@ -9,12 +9,14 @@ html {
     padding: 1rem 7%;
     background-color: black;
     border-bottom: 1px solid white;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
+    position: fixed;
+    transition: all 300ms ease-in-out;
 }
+
 .navbar .navbar-judul a {
     font-family: "permanent marker";
     color: white;
@@ -97,4 +99,3 @@ html {
 @keyframes slide {
     to {background-position: 100rem;}
 }
-
