@@ -1,0 +1,143 @@
+:root {
+    --primary: #b30000;
+    --bg: #dcdcdc;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #ffffff;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #b30000;
+    border-bottom: 1px solid #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar img {
+    display: flex;
+    justify-content: left;
+    border-radius: 100%;
+    width: 4%;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+    font-style: italic;
+  }
+  
+  .navbar .navbar-logo span {
+    color: #ffffff;
+  }
+  
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: #000000;
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #000000;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  .navbar .navbar-extra a {
+    color: #fff;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: #000000;
+  }
+  
+  #book-menu {
+    /* display: none; */
+  }
+  
+  #search {
+    display: none;
+  }
+
+  @media (max-width: 758px) {
+    html {
+      font-size: 62.5%;
+    }
+  
+    #book-menu {
+      display: inline-block;
+    }
+  
+    #search {
+      /* display: contents; */
+    }
+  
+    .navbar img {
+      display: block;
+    }
+  
+    .navbar .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: #fff;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.3s;
+    }
+  
+    .navbar .navbar-nav.active {
+      right: -15%;
+    }
+  
+    .navbar .navbar-nav a {
+      color: #000000;
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  
+    .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+    }
+  
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+    }

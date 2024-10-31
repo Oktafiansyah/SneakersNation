@@ -50,7 +50,7 @@ html {
     background-position: center;
     position: relative;
     margin-bottom: 2rem;
-}
+} 
 
 .body {
     color: white;
@@ -98,4 +98,49 @@ html {
 
 @keyframes slide {
     to {background-position: 100rem;}
+}
+
+h1.title {
+    text-transform: uppercase;
+    margin-bottom: 10%;
+}
+
+.container {
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sepatu img {
+    width: 300px;
+    height: 300px;
+}
+
+.sepatu2 img {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.harga h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Memusatkan tombol di tengah halaman */
+    gap: 100px; /* Menambahkan jarak antar tombol */
+    margin-top: 20px;
+}
+
+.harga {
+    text-align: center;
 }
